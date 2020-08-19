@@ -17,4 +17,7 @@ class Chuck {
     addJoke(joke) {
         this.jokes.push(joke);
     }
+    getRandomJoke() {
+        return this.jokes[Math.floor(Math.random() * this.jokes.length)];
+    }
 }
